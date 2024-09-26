@@ -21,11 +21,15 @@ from transformers import (
     AutoTokenizer,
     BitsAndBytesConfig,
     AutoProcessor, 
-    MllamaForConditionalGeneration,
-    AutoModel,
+    AutoModel
 )
 from transformers.models.llama.modeling_llama import LlamaDecoderLayer
-from transformers.models.mllama.modeling_mllama import  MllamaSelfAttentionDecoderLayer,MllamaCrossAttentionDecoderLayer,MllamaVisionEncoderLayer
+from transformers.models.mllama.modeling_mllama import  (
+    MllamaSelfAttentionDecoderLayer,
+    MllamaCrossAttentionDecoderLayer,
+    MllamaVisionEncoderLayer,
+    MllamaForConditionalGeneration
+)
 
 from llama_recipes.configs import fsdp_config as FSDP_CONFIG
 from llama_recipes.configs import train_config as TRAIN_CONFIG
